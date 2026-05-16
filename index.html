@@ -18,6 +18,16 @@
             background-size: cover;
             background-position: center;
         }
+
+        /* Mobile Optimization for Hero Image */
+        @media (max-width: 767px) {
+            .hero-gradient {
+                background-position: 35% center; /* Adjusts focus to see more of the car/action on small screens */
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+        }
         
         .glass-card {
             background: rgba(255, 255, 255, 0.7);
@@ -46,7 +56,7 @@
         .bento-card {
             position: relative;
             overflow: hidden;
-            border-radius: 1rem; /* Reduced from 2rem */
+            border-radius:1rem;
             background: #fff;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -114,7 +124,7 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            border-radius: 1rem; /* Reduced from 2rem */
+            border-radius: 1rem;
             background: #000;
             box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.2);
         }
@@ -129,8 +139,8 @@
 
         /* UTILITY: SECTION SPACING REDUCTION */
         .section-compact {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
     </style>
 </head>
@@ -148,36 +158,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative hero-gradient py-24 lg:py-48 flex items-center text-white">
+    <header class="relative hero-gradient min-h-[80vh] md:min-h-screen py-24 lg:py-48 flex items-center text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
             <div class="inline-block px-4 py-1.5 bg-blue-600/40 rounded-full text-blue-100 font-bold text-xs uppercase tracking-widest mb-6 border border-blue-400/30">
-                Professional Car Fumigation Singapore
+                Over 5 Years of Experience
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
                 Breathe Easy.<br>
                 Drive Confident.<br>
                 <span class="text-green-400">100% Pest-Free.</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mb-10 leading-relaxed">
-                Eliminate cockroaches, ants, bed bugs, and other crawling pests with our water-based ULV fogging. Safe, effective, and completely odourless.
+            <p class="text-base md:text-xl text-gray-200 max-w-2xl mb-10 leading-relaxed">
+                Our methods are trusted across all sectors—from critical healthcare facilities to global corporate headquarters. Eliminate pests with our water-based ULV fogging.
             </p>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <!-- Specific Pest Icons -->
+            <div class="flex flex-wrap gap-4 md:gap-8 mb-12 justify-center md:justify-start">
                 <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-white/10 rounded-lg"><i class="fas fa-user-shield text-green-400"></i></div>
-                    <span class="text-sm font-semibold leading-tight">Experienced Professionals</span>
+                    <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-bug text-red-400 text-lg md:text-xl"></i></div>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Cockroaches</span>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-white/10 rounded-lg"><i class="fas fa-leaf text-green-400"></i></div>
-                    <span class="text-sm font-semibold leading-tight">Safe & Non-Toxic</span>
+                    <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-spider text-red-400 text-lg md:text-xl"></i></div>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Ants</span>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-white/10 rounded-lg"><i class="fas fa-building text-green-400"></i></div>
-                    <span class="text-sm font-semibold leading-tight">Private & Corporate Fleet</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-white/10 rounded-lg"><i class="fas fa-clock text-green-400"></i></div>
-                    <span class="text-sm font-semibold leading-tight">Same Day Service</span>
+                    <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-bacteria text-red-400 text-lg md:text-xl"></i></div>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Bed Bugs</span>
                 </div>
             </div>
 
@@ -185,7 +192,6 @@
                 <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl font-bold text-lg shadow-2xl flex items-center justify-center transition">
                     <i class="fab fa-whatsapp mr-2 text-2xl"></i> BOOK ON WHATSAPP
                 </a>
-                <!-- Link added to 5.0 Google stars -->
                 <a href="https://www.google.com.sg/search?sca_esv=8ed44501168e219b&biw=3440&bih=1271&sxsrf=ANbL-n5lDYL9t8mjf9iAfjV9WJPxDWDN5Q:1776304479486&kgmid=/g/11xmhk9m3n&q=Pro-shield+-+Mold+Remediation+and+Car+Fumigation+Services+Singapore&shem=dlvsc&shndl=30&source=sh/x/loc/uni/m1/1&kgs=22fab0883f6d39c9&utm_source=dlvsc,sh/x/loc/uni/m1/1#lrd=0x31da158b0e06e265:0x2035d106a8833b3e,1,,,," target="_blank" class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/20 transition">
                     <div class="flex space-x-1 text-yellow-400 mr-3">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -197,7 +203,7 @@
     </header>
 
     <!-- Trust Banner -->
-    <section class="py-16 bg-white border-b">
+    <section class="py-8 md:py-16 bg-white border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="glass-card -mt-24 relative z-10 p-8 rounded-2xl shadow-2xl grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -212,161 +218,149 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex items-center text-sm font-bold text-gray-700">
-                            <i class="fas fa-check-circle text-green-500 mr-2"></i> NEA Approved Solutions
+                            <i class="fas fa-certificate text-blue-500 mr-2"></i> Professional & Certified
                         </div>
                         <div class="flex items-center text-sm font-bold text-gray-700">
-                            <i class="fas fa-check-circle text-green-500 mr-2"></i> On-Site Specialist
+                            <i class="fas fa-shield-alt text-blue-500 mr-2"></i> Fully Insured Service
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-3">
-                    <div class="text-center">
-                        <div class="h-20 bg-gray-50 rounded-xl mb-2 flex items-center justify-center border border-gray-100"><i class="fas fa-vial text-2xl text-blue-500"></i></div>
-                        <p class="text-[10px] font-bold uppercase tracking-tight">NEA Solutions</p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                        <i class="fas fa-user-tie text-2xl text-blue-500 mb-2 block"></i>
+                        <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Experienced Professionals</p>
                     </div>
-                    <div class="text-center">
-                        <div class="h-20 bg-gray-50 rounded-xl mb-2 flex items-center justify-center border border-gray-100"><i class="fas fa-wind text-2xl text-blue-500"></i></div>
-                        <p class="text-[10px] font-bold uppercase tracking-tight">ULV Fogger</p>
+                    <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                        <i class="fas fa-leaf text-2xl text-blue-500 mb-2 block"></i>
+                        <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Safe, Non-Toxic, Odourless</p>
                     </div>
-                    <div class="text-center">
-                        <div class="h-20 bg-gray-50 rounded-xl mb-2 flex items-center justify-center border border-gray-100"><i class="fas fa-shield-virus text-2xl text-blue-500"></i></div>
-                        <p class="text-[10px] font-bold uppercase tracking-tight">Disinfection</p>
+                    <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                        <i class="fas fa-truck-moving text-2xl text-blue-500 mb-2 block"></i>
+                        <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Private & Corporate Fleet</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                        <i class="fas fa-bolt text-2xl text-blue-500 mb-2 block"></i>
+                        <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Fast Response Same Day</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
+    <!-- Why Choose Us Feature Section -->
+    <section class="py-8 md:py-12 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-extrabold mb-4 text-slate-900">Our Premium Services</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-atom text-blue-600"></i>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-slate-900">Why Choose Us</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <!-- NEA Approved -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/NEAApproved.png" alt="NEA Solutions" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="font-bold mb-2">ULV Fogging</h3>
-                    <p class="text-gray-500 text-xs">Deep penetration water-based fogging.</p>
+                    <p class="font-bold text-sm text-slate-800">NEA Approved Solutions</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-virus-slash text-green-600"></i>
+                <!-- ULV Fogger -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal" style="animation-delay: 0.1s;">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/heroimage.png" alt="ULV Fogger" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="font-bold mb-2">Disinfection</h3>
-                    <p class="text-gray-500 text-xs">Hospital-grade sanitization.</p>
+                    <p class="font-bold text-sm text-slate-800">Professional ULV Fogging</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-spray-can text-purple-600"></i>
+                <!-- Disinfection -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal" style="animation-delay: 0.2s;">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/Gallery4.jpeg" alt="Disinfection" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="font-bold mb-2">3-Month Protection</h3>
-                    <p class="text-gray-500 text-xs">Long-lasting residual barrier.</p>
+                    <p class="font-bold text-sm text-slate-800">Deep Interior Disinfection</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                <!-- Protective Coating -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal" style="animation-delay: 0.3s;">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/Gallery7.jpeg" alt="Protective Coating" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="font-bold mb-2">On-Site</h3>
-                    <p class="text-gray-500 text-xs">At your home or office.</p>
+                    <p class="font-bold text-sm text-slate-800">Protective Surface Coating</p>
+                </div>
+                <!-- All Vehicle Types -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal" style="animation-delay: 0.4s;">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/safeforallvehicle.png" alt="Safe for All Vehicles" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-slate-800">Safe for All Vehicle Types</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Revamped Gallery Section - Bento Grid & Hover Text -->
-    <section id="gallery" class="py-24 bg-white">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Apple Style Header - Centralized -->
-            <div class="mb-16 reveal text-center">
+            <div class="mb-8 md:mb-12 reveal text-center">
                 <p class="text-blue-600 font-bold tracking-tight mb-2 uppercase text-xs">Project Gallery</p>
-                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">Real Onsite Sanitization Works</h2>
-                <div class="w-16 h-1 bg-slate-900 rounded-full mb-6 mx-auto"></div>
-                <p class="text-slate-500 max-w-2xl text-lg leading-relaxed mx-auto">Actual vehicle fumigation and sanitization services completed across Singapore, showcasing our process and professional standards.</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">Real Onsite Sanitization Works</h2>
+                <div class="w-16 h-1 bg-slate-900 rounded-full mb-4 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg leading-relaxed mx-auto">Actual vehicle fumigation and sanitization services completed across Singapore.</p>
             </div>
 
-            <!-- Bento Grid -->
             <div class="bento-container reveal" style="animation-delay: 0.2s;">
-                
-                <!-- Main Highlight (Arrival) -->
                 <div class="bento-card bento-item-large group">
                     <img src="images/Gallery1.jpeg" alt="Onsite Arrival Treatment">
                     <div class="hover-overlay">
                         <span class="hover-text">Onsite Fogging Process</span>
                     </div>
                 </div>
-
-                <!-- Interior Treatment -->
                 <div class="bento-card group">
                     <img src="images/Gallery2.jpeg" alt="Interior Treatment">
                     <div class="hover-overlay">
                         <span class="hover-text">Interior Treatment</span>
                     </div>
                 </div>
-
-                <!-- Final Result -->
                 <div class="bento-card group">
                     <img src="images/Gallery10.jpeg" alt="Sanitized Result">
                     <div class="hover-overlay">
                         <span class="hover-text">Commercial Vehicle Treatment</span>
                     </div>
                 </div>
-
-                <!-- Wide Fleet Highlight -->
                 <div class="bento-card bento-item-wide group">
                     <img src="images/Gallery7.jpeg" alt="Fleet Vehicle Service">
                     <div class="hover-overlay">
                         <span class="hover-text">Corporate Fleet Excellence</span>
                     </div>
                 </div>
-
-                <!-- NEW: Additional Box 1 -->
                 <div class="bento-card group">
                     <img src="images/Gallery4.jpeg" alt="Commercial Fleet" onerror="this.src='https://via.placeholder.com/600x400?text=Commercial+Fumigation'">
                     <div class="hover-overlay">
                         <span class="hover-text">Deep Sanitization</span>
                     </div>
                 </div>
-
-                <!-- Logistics Detail -->
                 <div class="bento-card group">
                     <img src="images/Gallery3.jpeg" alt="Logistics Support">
                     <div class="hover-overlay">
                         <span class="hover-text">Logistics Van Sanitization</span>
                     </div>
                 </div>
-
-                <!-- Tall Process Detail -->
                 <div class="bento-card bento-item-tall group">
                     <img src="images/Gallery5.jpeg" alt="Safe Solutions">
                     <div class="hover-overlay">
                         <span class="hover-text">Residential Carpark Services</span>
                     </div>
                 </div>
-
-                <!-- NEW: Additional Box 2 -->
                 <div class="bento-card group">
                     <img src="images/Gallery6.jpeg" alt="Deep Cleaning" onerror="this.src='https://via.placeholder.com/600x400?text=Deep+Sanitization'">
                     <div class="hover-overlay">
                         <span class="hover-text">Multi-Point Disinfection</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Video Showcase Section - Navigation Updated -->
+    <!-- Video Showcase Section -->
     <section id="videos" class="section-compact bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="relative group">
-                <!-- Video Container -->
                 <div class="video-wrapper">
-                    <!-- Default set to first video from your list -->
-                    <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/1192759726?title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/1192759749?title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
-
-                <!-- Navigation Buttons: On each side -->
                 <button onclick="prevVideo()" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 md:-translate-x-6 w-14 h-14 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all z-10 hover:scale-110 active:scale-95 focus:outline-none">
                     <i class="fas fa-chevron-left text-xl"></i>
                 </button>
@@ -377,27 +371,31 @@
         </div>
     </section>
 
-    <!-- Pricing Section - Reduced Spacing -->
+    <!-- Pricing Section -->
     <section id="pricing" class="section-compact bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-extrabold text-slate-900">Transparent Pricing</h2>
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-extrabold text-slate-900">No Hidden Costs</h2>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div class="bg-gray-50 p-6 rounded-2xl text-center border hover:border-blue-500 transition-all">
+                    <i class="fas fa-car text-2xl text-blue-600 mb-3 block"></i>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Sedan</p>
                     <p class="text-3xl font-extrabold text-blue-900">$140</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-2xl text-center border hover:border-blue-500 transition-all">
+                    <i class="fas fa-car-side text-2xl text-blue-600 mb-3 block"></i>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">SUV</p>
                     <p class="text-3xl font-extrabold text-blue-900">$150</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-2xl text-center border hover:border-blue-500 transition-all">
+                    <i class="fas fa-shuttle-van text-2xl text-blue-600 mb-3 block"></i>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">MPV</p>
                     <p class="text-3xl font-extrabold text-blue-900">$160</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-2xl text-center border hover:border-blue-500 transition-all">
+                    <i class="fas fa-truck text-2xl text-blue-600 mb-3 block"></i>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Van</p>
                     <p class="text-3xl font-extrabold text-blue-900">$170</p>
                 </div>
@@ -413,22 +411,19 @@
         </div>
     </section>
 
-    <!-- FAQ Section - Reduced Spacing -->
+    <!-- FAQ Section -->
     <section id="faq" class="section-compact bg-gray-50">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-center mb-10 text-slate-900">Common Questions</h2>
+            <h2 class="text-3xl font-extrabold text-center mb-8 text-slate-900">Common Questions</h2>
             <div class="space-y-4">
-                <!-- FAQ 1 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                     <h3 class="font-bold text-lg mb-2">Q: Do you provide fumigation for corporate fleets and logistics vans?</h3>
                     <p class="text-gray-500 text-sm">A: Yes. We provide onsite fumigation services for corporate fleets, logistics vans, delivery trucks, and company vehicles anywhere in Singapore.</p>
                 </div>
-                <!-- FAQ 2 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                     <h3 class="font-bold text-lg mb-2">Q: Is the fumigation safe for drivers and vehicles?</h3>
                     <p class="text-gray-500 text-sm">A: Yes. Our fumigation solution is safe, non-toxic, and 100% odourless, making it suitable for daily-use vehicles.</p>
                 </div>
-                <!-- FAQ 3 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                     <h3 class="font-bold text-lg mb-2">Q: How often should fleet vehicles be fumigated?</h3>
                     <p class="text-gray-500 text-sm">A: We recommend quarterly fumigation for fleet vehicles to prevent recurring pest infestations and maintain a clean, professional environment.</p>
@@ -437,10 +432,10 @@
         </div>
     </section>
 
-    <!-- Final WhatsApp CTA - Reduced Spacing -->
+    <!-- Final WhatsApp CTA -->
     <section class="section-compact bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-gray-950 rounded-[1.25rem] p-12 text-white shadow-2xl"> <!-- Reduced from 2.5rem -->
+            <div class="bg-gray-950 rounded-[1.25rem] p-12 text-white shadow-2xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for a Pest-Free Drive?</h2>
                 <p class="text-gray-400 mb-8">Book your professional onsite session now.</p>
                 <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-xl transition transform hover:scale-105">
@@ -456,16 +451,11 @@
     </div>
 
     <script>
-        // Updated video IDs based on your Vimeo links
-        const videos = [
-            '1192759726', // First video ID
-            '1192759749'  // Second video ID
-        ];
+        const videos = ['1192759749', '1192759726']; // Swapped order so 749 shows first
         let currentVideoIndex = 0;
 
         function updateVideo() {
             const iframe = document.getElementById('main-vimeo-player');
-            // Using player.vimeo.com embed format with the provided IDs
             iframe.src = `https://player.vimeo.com/video/${videos[currentVideoIndex]}?title=0&byline=0&portrait=0&autoplay=1`;
         }
 
@@ -479,7 +469,6 @@
             updateVideo();
         }
 
-        // Simple Reveal Observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
