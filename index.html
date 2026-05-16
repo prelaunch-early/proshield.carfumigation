@@ -46,7 +46,7 @@
         .bento-card {
             position: relative;
             overflow: hidden;
-            border-radius: 2rem;
+            border-radius: 1rem; /* Reduced from 2rem */
             background: #fff;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -114,7 +114,7 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            border-radius: 2rem;
+            border-radius: 1rem; /* Reduced from 2rem */
             background: #000;
             box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.2);
         }
@@ -140,9 +140,8 @@
     <nav class="absolute top-0 left-0 w-full z-50 p-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center">
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-2 px-4 rounded-xl flex items-center">
-                    <img src="images/proshieldlogo.png" alt="Pro-Shield Logo" class="h-10 w-auto object-contain mr-3" onerror="this.src='https://via.placeholder.com/150x50?text=PRO-SHIELD'">
-                    <span class="text-white font-bold tracking-tight text-lg">PRO-SHIELD</span>
+                <div class="flex items-center">
+                    <img src="images/proshieldlogo.png" alt="Pro-Shield Logo" class="h-12 w-auto object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=PRO-SHIELD'">
                 </div>
             </div>
         </div>
@@ -186,12 +185,13 @@
                 <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl font-bold text-lg shadow-2xl flex items-center justify-center transition">
                     <i class="fab fa-whatsapp mr-2 text-2xl"></i> BOOK ON WHATSAPP
                 </a>
-                <div class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border border-white/20 flex items-center justify-center">
+                <!-- Link added to 5.0 Google stars -->
+                <a href="https://www.google.com.sg/search?sca_esv=8ed44501168e219b&biw=3440&bih=1271&sxsrf=ANbL-n5lDYL9t8mjf9iAfjV9WJPxDWDN5Q:1776304479486&kgmid=/g/11xmhk9m3n&q=Pro-shield+-+Mold+Remediation+and+Car+Fumigation+Services+Singapore&shem=dlvsc&shndl=30&source=sh/x/loc/uni/m1/1&kgs=22fab0883f6d39c9&utm_source=dlvsc,sh/x/loc/uni/m1/1#lrd=0x31da158b0e06e265:0x2035d106a8833b3e,1,,,," target="_blank" class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/20 transition">
                     <div class="flex space-x-1 text-yellow-400 mr-3">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <span class="font-bold">5.0 on Google</span>
-                </div>
+                </a>
             </div>
         </div>
     </header>
@@ -199,7 +199,7 @@
     <!-- Trust Banner -->
     <section class="py-16 bg-white border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-card -mt-24 relative z-10 p-8 rounded-3xl shadow-2xl grid md:grid-cols-2 gap-12 items-center">
+            <div class="glass-card -mt-24 relative z-10 p-8 rounded-2xl shadow-2xl grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <div class="flex items-center space-x-4 mb-4">
                         <div class="bg-blue-100 p-3 rounded-full text-blue-600">
@@ -240,30 +240,30 @@
     <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Our Premium Services</h2>
+            <h2 class="text-4xl font-extrabold mb-4 text-slate-900">Our Premium Services</h2>
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-atom text-blue-600"></i>
                     </div>
                     <h3 class="font-bold mb-2">ULV Fogging</h3>
                     <p class="text-gray-500 text-xs">Deep penetration water-based fogging.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-virus-slash text-green-600"></i>
                     </div>
                     <h3 class="font-bold mb-2">Disinfection</h3>
                     <p class="text-gray-500 text-xs">Hospital-grade sanitization.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-spray-can text-purple-600"></i>
                     </div>
                     <h3 class="font-bold mb-2">3-Month Protection</h3>
                     <p class="text-gray-500 text-xs">Long-lasting residual barrier.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-map-marker-alt text-yellow-600"></i>
                     </div>
@@ -277,12 +277,12 @@
     <!-- Revamped Gallery Section - Bento Grid & Hover Text -->
     <section id="gallery" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Apple Style Header -->
-            <div class="mb-16 reveal">
+            <!-- Apple Style Header - Centralized -->
+            <div class="mb-16 reveal text-center">
                 <p class="text-blue-600 font-bold tracking-tight mb-2 uppercase text-xs">Project Gallery</p>
                 <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">Real Onsite Sanitization Works</h2>
-                <div class="w-16 h-1 bg-slate-900 rounded-full mb-6"></div>
-                <p class="text-slate-500 max-w-2xl text-lg leading-relaxed">Actual vehicle fumigation and sanitization services completed across Singapore, showcasing intentional process and professional standards.</p>
+                <div class="w-16 h-1 bg-slate-900 rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg leading-relaxed mx-auto">Actual vehicle fumigation and sanitization services completed across Singapore, showcasing our process and professional standards.</p>
             </div>
 
             <!-- Bento Grid -->
@@ -319,6 +319,7 @@
                         <span class="hover-text">Corporate Fleet Excellence</span>
                     </div>
                 </div>
+
                 <!-- NEW: Additional Box 1 -->
                 <div class="bento-card group">
                     <img src="images/Gallery4.jpeg" alt="Commercial Fleet" onerror="this.src='https://via.placeholder.com/600x400?text=Commercial+Fumigation'">
@@ -326,7 +327,7 @@
                         <span class="hover-text">Deep Sanitization</span>
                     </div>
                 </div>
-        
+
                 <!-- Logistics Detail -->
                 <div class="bento-card group">
                     <img src="images/Gallery3.jpeg" alt="Logistics Support">
@@ -361,7 +362,8 @@
             <div class="relative group">
                 <!-- Video Container -->
                 <div class="video-wrapper">
-                    <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/76979871?h=8272103f6e&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <!-- Default set to first video from your list -->
+                    <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/1192759726?title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
 
                 <!-- Navigation Buttons: On each side -->
@@ -379,7 +381,7 @@
     <section id="pricing" class="section-compact bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-extrabold">Transparent Pricing</h2>
+                <h2 class="text-3xl font-extrabold text-slate-900">Transparent Pricing</h2>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -414,7 +416,7 @@
     <!-- FAQ Section - Reduced Spacing -->
     <section id="faq" class="section-compact bg-gray-50">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-center mb-10">Common Questions</h2>
+            <h2 class="text-3xl font-extrabold text-center mb-10 text-slate-900">Common Questions</h2>
             <div class="space-y-4">
                 <!-- FAQ 1 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
@@ -438,10 +440,10 @@
     <!-- Final WhatsApp CTA - Reduced Spacing -->
     <section class="section-compact bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-gray-950 rounded-[2.5rem] p-12 text-white shadow-2xl">
+            <div class="bg-gray-950 rounded-[1.25rem] p-12 text-white shadow-2xl"> <!-- Reduced from 2.5rem -->
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for a Pest-Free Drive?</h2>
                 <p class="text-gray-400 mb-8">Book your professional onsite session now.</p>
-                <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-2xl transition transform hover:scale-105">
+                <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-xl transition transform hover:scale-105">
                     <i class="fab fa-whatsapp mr-3 text-2xl"></i> Chat with us Today
                 </a>
             </div>
@@ -454,15 +456,17 @@
     </div>
 
     <script>
+        // Updated video IDs based on your Vimeo links
         const videos = [
-            '76979871', // Video 1
-            '76979871'  // Video 2 (Using same ID as placeholder, update as needed)
+            '1192759726', // First video ID
+            '1192759749'  // Second video ID
         ];
         let currentVideoIndex = 0;
 
         function updateVideo() {
             const iframe = document.getElementById('main-vimeo-player');
-            iframe.src = `https://player.vimeo.com/video/${videos[currentVideoIndex]}?h=8272103f6e&title=0&byline=0&portrait=0&autoplay=1`;
+            // Using player.vimeo.com embed format with the provided IDs
+            iframe.src = `https://player.vimeo.com/video/${videos[currentVideoIndex]}?title=0&byline=0&portrait=0&autoplay=1`;
         }
 
         function nextVideo() {
