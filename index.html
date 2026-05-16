@@ -69,28 +69,32 @@
             transform: scale(1.08);
         }
 
-        /* GLASSMORPHISM LABELS */
-        .glass-label {
+        /* HOVER ONLY OVERLAY (NO GLASS) */
+        .hover-overlay {
             position: absolute;
-            bottom: 1.5rem;
-            left: 1.5rem;
-            right: 1.5rem;
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px) saturate(160%);
-            -webkit-backdrop-filter: blur(10px) saturate(160%);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 1rem 1.25rem;
-            border-radius: 1.25rem;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
 
-        .glass-label-text {
-            font-size: 0.85rem;
+        .bento-card:hover .hover-overlay {
+            opacity: 1;
+        }
+
+        .hover-text {
+            color: white;
             font-weight: 700;
-            color: #0f172a;
-            letter-spacing: -0.01em;
+            font-size: 1rem;
+            transform: translateY(10px);
+            transition: transform 0.4s ease;
+        }
+
+        .bento-card:hover .hover-text {
+            transform: translateY(0);
         }
 
         /* Fade-up Animation */
@@ -122,11 +126,6 @@
             height: 100%;
             border: 0;
         }
-        
-        .video-btn.active {
-            background-color: #2563eb;
-            color: white;
-        }
 
         /* UTILITY: SECTION SPACING REDUCTION */
         .section-compact {
@@ -142,7 +141,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center">
                 <div class="bg-white/10 backdrop-blur-md border border-white/20 p-2 px-4 rounded-xl flex items-center">
-                    <img src="proshieldlogo.png" alt="Pro-Shield Logo" class="h-10 w-auto object-contain mr-3" onerror="this.src='https://via.placeholder.com/150x50?text=PRO-SHIELD'">
+                    <img src="images/proshieldlogo.png" alt="Pro-Shield Logo" class="h-10 w-auto object-contain mr-3" onerror="this.src='https://via.placeholder.com/150x50?text=PRO-SHIELD'">
                     <span class="text-white font-bold tracking-tight text-lg">PRO-SHIELD</span>
                 </div>
             </div>
@@ -275,7 +274,7 @@
         </div>
     </section>
 
-    <!-- Revamped Gallery Section - Bento Grid & Glassmorphism -->
+    <!-- Revamped Gallery Section - Bento Grid & Hover Text -->
     <section id="gallery" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Apple Style Header -->
@@ -292,50 +291,64 @@
                 <!-- Main Highlight (Arrival) -->
                 <div class="bento-card bento-item-large group">
                     <img src="images/Gallery1.jpeg" alt="Onsite Arrival Treatment">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Onsite Fogging Process</span>
-                        <i class="fas fa-chevron-right text-slate-400 text-xs"></i>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Onsite Fogging Process</span>
                     </div>
                 </div>
 
                 <!-- Interior Treatment -->
                 <div class="bento-card group">
                     <img src="images/Gallery2.jpeg" alt="Interior Treatment">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Interior Treatment</span>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Interior Treatment</span>
                     </div>
                 </div>
 
                 <!-- Final Result -->
                 <div class="bento-card group">
                     <img src="images/Gallery10.jpeg" alt="Sanitized Result">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Deep Sanitization</span>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Deep Sanitization</span>
                     </div>
                 </div>
 
                 <!-- Wide Fleet Highlight -->
                 <div class="bento-card bento-item-wide group">
                     <img src="images/Gallery7.jpeg" alt="Fleet Vehicle Service">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Corporate Fleet Excellence</span>
-                        <i class="fas fa-building text-slate-400 text-sm"></i>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Corporate Fleet Excellence</span>
                     </div>
                 </div>
 
                 <!-- Tall Process Detail -->
                 <div class="bento-card bento-item-tall group">
                     <img src="images/Gallery5.jpeg" alt="Safe Solutions">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Residential Carpark</span>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Residential Carpark Services</span>
                     </div>
                 </div>
 
                 <!-- Logistics Detail -->
                 <div class="bento-card group">
                     <img src="images/Gallery3.jpeg" alt="Logistics Support">
-                    <div class="glass-label">
-                        <span class="glass-label-text">Logistics Van</span>
+                    <div class="hover-overlay">
+                        <span class="hover-text">Logistics Van Sanitization</span>
+                    </div>
+                </div>
+
+                <!-- NEW: Additional Box 1 -->
+                <div class="bento-card group">
+                    <img src="images/Gallery4.jpeg" alt="Commercial Fleet" onerror="this.src='https://via.placeholder.com/600x400?text=Commercial+Fumigation'">
+                    <div class="hover-overlay">
+                        <span class="hover-text">Commercial Vehicle Treatment</span>
+                    </div>
+                </div>
+
+                <!-- NEW: Additional Box 2 -->
+                <div class="bento-card group">
+                    <img src="images/Gallery6.jpeg" alt="Deep Cleaning" onerror="this.src='https://via.placeholder.com/600x400?text=Deep+Sanitization'">
+                    <div class="hover-overlay">
+                        <span class="hover-text">Multi-Point Disinfection</span>
                     </div>
                 </div>
 
@@ -343,22 +356,22 @@
         </div>
     </section>
 
-    <!-- Video Showcase Section - Reduced Spacing -->
+    <!-- Video Showcase Section - Navigation Updated -->
     <section id="videos" class="section-compact bg-gray-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="video-wrapper mb-6">
-                <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/76979871?h=8272103f6e&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative group">
+                <!-- Video Container -->
+                <div class="video-wrapper">
+                    <iframe id="main-vimeo-player" src="https://player.vimeo.com/video/76979871?h=8272103f6e&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
 
-            <div class="flex flex-col md:flex-row justify-between items-center bg-white p-6 rounded-3xl shadow-sm">
-                <div class="mb-4 md:mb-0">
-                    <h2 id="active-video-title" class="text-xl font-extrabold text-blue-900">Fumigation Process 1</h2>
-                    <p id="active-video-desc" class="text-gray-500 text-sm">Observe our professional ULV fogging technique.</p>
-                </div>
-                <div class="flex space-x-2">
-                    <button onclick="switchVideo('76979871', 'Fumigation Process 1', 'Observe our professional ULV fogging technique.')" class="video-btn active px-5 py-2 rounded-xl font-bold text-xs bg-gray-100 transition-all">VIDEO 1</button>
-                    <button onclick="switchVideo('76979871', 'Fumigation Process 2', 'Detailed look at cabin sanitization.')" class="video-btn px-5 py-2 rounded-xl font-bold text-xs bg-gray-100 transition-all">VIDEO 2</button>
-                </div>
+                <!-- Navigation Buttons: On each side -->
+                <button onclick="prevVideo()" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 md:-translate-x-6 w-14 h-14 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all z-10 hover:scale-110 active:scale-95 focus:outline-none">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <button onclick="nextVideo()" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 md:translate-x-6 w-14 h-14 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all z-10 hover:scale-110 active:scale-95 focus:outline-none">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -442,18 +455,25 @@
     </div>
 
     <script>
-        function switchVideo(vimeoId, title, description) {
+        const videos = [
+            '76979871', // Video 1
+            '76979871'  // Video 2 (Using same ID as placeholder, update as needed)
+        ];
+        let currentVideoIndex = 0;
+
+        function updateVideo() {
             const iframe = document.getElementById('main-vimeo-player');
-            const titleElem = document.getElementById('active-video-title');
-            const descElem = document.getElementById('active-video-desc');
-            iframe.src = `https://player.vimeo.com/video/${vimeoId}?h=8272103f6e&title=0&byline=0&portrait=0&autoplay=1`;
-            titleElem.textContent = title;
-            descElem.textContent = description;
-            const buttons = document.querySelectorAll('.video-btn');
-            buttons.forEach(btn => btn.classList.remove('active', 'bg-blue-600', 'text-white'));
-            if (window.event) {
-                window.event.currentTarget.classList.add('active', 'bg-blue-600', 'text-white');
-            }
+            iframe.src = `https://player.vimeo.com/video/${videos[currentVideoIndex]}?h=8272103f6e&title=0&byline=0&portrait=0&autoplay=1`;
+        }
+
+        function nextVideo() {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            updateVideo();
+        }
+
+        function prevVideo() {
+            currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+            updateVideo();
         }
 
         // Simple Reveal Observer
