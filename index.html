@@ -142,6 +142,19 @@
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
+
+        /* COLLAPSIBLE FAQ TRANSITIONS */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease;
+        }
+        .faq-trigger.active .faq-chevron {
+            transform: rotate(180deg);
+        }
+        .faq-chevron {
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-[#FBFBFD] text-[#1D1D1F]">
@@ -149,7 +162,7 @@
     <!-- Navigation -->
     <nav class="absolute top-0 left-0 w-full z-50 p-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center">
+            <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <!-- Logo increased by ~30% (h-12 to h-16) -->
                     <img src="images/proshieldlogo.png" alt="Pro-Shield Logo" class="h-16 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x65?text=PRO-SHIELD'">
@@ -162,7 +175,7 @@
     <header class="relative hero-gradient min-h-[80vh] md:min-h-screen py-24 lg:py-48 flex items-center text-white">
         <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 text-left">
             <div class="inline-block px-4 py-1.5 bg-blue-600/40 rounded-full text-blue-100 font-bold text-xs uppercase tracking-widest mb-6 border border-blue-400/30">
-                Over 5 Years of Experience
+                Car Fumigation Singapore / NEA Approved & Non-Toxic
             </div>
             <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
                 Breathe Easy.<br>
@@ -170,14 +183,14 @@
                 <span class="text-green-400">100% Pest-Free.</span>
             </h1>
             <p class="text-base md:text-xl text-gray-200 max-w-2xl mb-10 leading-relaxed">
-                Our methods are trusted across all sectors—from critical healthcare facilities to global corporate headquarters. Eliminate pests with our water-based ULV fogging.
+                Professional Car Fumigation Service that eliminates cockroaches, ants, bed bug and other crawling pests.<br>Safe, effective, non toxic and odourless.
             </p>
             
             <!-- Specific Pest Icons -->
             <div class="flex flex-wrap gap-4 md:gap-8 mb-12 justify-start">
                 <div class="flex items-center space-x-3">
                     <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-bug text-red-400 text-lg md:text-xl"></i></div>
-                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Cockroaches</span>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Cockroach</span>
                 </div>
                 <div class="flex items-center space-x-3">
                     <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-spider text-red-400 text-lg md:text-xl"></i></div>
@@ -185,15 +198,26 @@
                 </div>
                 <div class="flex items-center space-x-3">
                     <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-bacteria text-red-400 text-lg md:text-xl"></i></div>
-                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Bed Bugs</span>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Bed Bug</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="p-3 bg-red-500/20 rounded-full border border-red-500/30"><i class="fas fa-shield-virus text-red-400 text-lg md:text-xl"></i></div>
+                    <span class="text-[10px] md:text-sm font-bold uppercase tracking-wider">Anti Any Crawling Pests</span>
                 </div>
             </div>
 
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-start">
                 <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl font-bold text-lg shadow-2xl flex items-center justify-center transition">
-                    <i class="fab fa-whatsapp mr-2 text-2xl"></i> BOOK ON WHATSAPP
+                    <i class="fab fa-whatsapp mr-2 text-2xl"></i> BOOK ON WHATSAPP (8666 6499)
                 </a>
+                <!-- Updated recognizable Google multi-color SVG icon -->
                 <a href="https://www.google.com.sg/search?sca_esv=8ed44501168e219b&biw=3440&bih=1271&sxsrf=ANbL-n5lDYL9t8mjf9iAfjV9WJPxDWDN5Q:1776304479486&kgmid=/g/11xmhk9m3n&q=Pro-shield+-+Mold+Remediation+and+Car+Fumigation+Services+Singapore&shem=dlvsc&shndl=30&source=sh/x/loc/uni/m1/1&kgs=22fab0883f6d39c9&utm_source=dlvsc,sh/x/loc/uni/m1/1#lrd=0x31da158b0e06e265:0x2035d106a8833b3e,1,,,," target="_blank" class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/20 transition">
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05" />
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335" />
+                    </svg>
                     <div class="flex space-x-1 text-yellow-400 mr-3">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
@@ -222,11 +246,11 @@
                             <i class="fas fa-certificate text-blue-500 mr-2"></i> Professional & Certified
                         </div>
                         <div class="flex items-center text-sm font-bold text-gray-700">
-                            <i class="fas fa-shield-alt text-blue-500 mr-2"></i> Fully Insured Service
+                            <i class="fas fa-route text-blue-500 mr-2"></i> Convenient Onsite Service
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
                     <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100">
                         <i class="fas fa-user-tie text-2xl text-blue-500 mb-2 block"></i>
                         <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Experienced Professionals</p>
@@ -243,6 +267,10 @@
                         <i class="fas fa-bolt text-2xl text-blue-500 mb-2 block"></i>
                         <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">Fast Response Same Day</p>
                     </div>
+                    <div class="text-center p-3 bg-gray-50 rounded-xl border border-gray-100 col-span-2 lg:col-span-1">
+                        <i class="fas fa-spray-can text-2xl text-blue-500 mb-2 block"></i>
+                        <p class="text-[9px] font-bold uppercase tracking-tight leading-tight">ULV Fogger & Preventive Coating</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,7 +280,7 @@
     <section class="py-8 md:py-12 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-slate-900">Why Choose Us</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
                 <!-- NEA Approved -->
                 <div class="flex flex-col items-center text-center space-y-4 reveal">
                     <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
@@ -288,6 +316,13 @@
                     </div>
                     <p class="font-bold text-sm text-slate-800">Safe for All Vehicle Types</p>
                 </div>
+                <!-- Convenient Mobile Service -->
+                <div class="flex flex-col items-center text-center space-y-4 reveal" style="animation-delay: 0.5s;">
+                    <div class="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-2">
+                        <img src="images/mobileservice.png" alt="Convenient Mobile Service" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Mobile+Service'">
+                    </div>
+                    <p class="font-bold text-sm text-slate-800">Convenient Mobile Service</p>
+                </div>
             </div>
         </div>
     </section>
@@ -297,7 +332,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-8 md:mb-12 reveal text-center">
                 <p class="text-blue-600 font-bold tracking-tight mb-2 uppercase text-xs">Project Gallery</p>
-                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">Real Onsite Sanitization Works</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">Real Onsite Car Fumigation Treatment</h2>
                 <div class="w-16 h-1 bg-slate-900 rounded-full mb-4 mx-auto"></div>
                 <p class="text-slate-500 max-w-2xl text-lg leading-relaxed mx-auto">Actual vehicle fumigation and sanitization services completed across Singapore.</p>
             </div>
@@ -376,7 +411,7 @@
     <section id="pricing" class="section-compact bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-6">
-                <h2 class="text-3xl font-extrabold text-slate-900">No Hidden Costs</h2>
+                <h2 class="text-3xl font-extrabold text-slate-900">Price List</h2>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -405,9 +440,9 @@
             <div class="bg-blue-900 p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between text-white">
                 <div class="mb-4 md:mb-0">
                     <p class="font-bold">All-In-One Treatment</p>
-                    <p class="text-blue-300 text-xs">ULV Fogging + Disinfection + 3-Month Protection.</p>
+                    <p class="text-blue-300 text-xs">ULV Fogging + Disinfection Wipedown + vacuuming of dead pest and protective spray coating.</p>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl font-bold transition">Book WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl font-bold transition text-center sm:text-left">Book WhatsApp (8666 6499)</a>
             </div>
         </div>
     </section>
@@ -416,18 +451,84 @@
     <section id="faq" class="section-compact bg-gray-50">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold text-center mb-8 text-slate-900">Common Questions</h2>
+            
             <div class="space-y-4">
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2">Q: Do you provide fumigation for corporate fleets and logistics vans?</h3>
-                    <p class="text-gray-500 text-sm">A: Yes. We provide onsite fumigation services for corporate fleets, logistics vans, delivery trucks, and company vehicles anywhere in Singapore.</p>
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">Do you provide onsite service?</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            Yes we do, we will drive over to your location once the appointment has been scheduled.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2">Q: Is the fumigation safe for drivers and vehicles?</h3>
-                    <p class="text-gray-500 text-sm">A: Yes. Our fumigation solution is safe, non-toxic, and 100% odourless, making it suitable for daily-use vehicles.</p>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">Difference between canisters and ULV foggers.</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            Canisters may leave an oily residue and an odour. ULV foggers do not, as our professional solution is purely water-based. Furthermore, the area of effect and penetration level is much larger.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2">Q: How often should fleet vehicles be fumigated?</h3>
-                    <p class="text-gray-500 text-sm">A: We recommend quarterly fumigation for fleet vehicles to prevent recurring pest infestations and maintain a clean, professional environment.</p>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">Is the treatment safe?</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            The chemicals used are completely non-toxic and odourless. We strictly use NEA-approved solutions that are safe for everyone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">How can I prevent pests from entering the car?</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            Practise good maintenance by not leaving food in the car, and avoiding parking near rubbish bins and open drains.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">What is the protective coating?</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            The protective coating acts as a preventive measure against pests, keeping your car pest-free for up to 3 months. After 3 months, you may choose to reapply the coating as pest control is an ongoing maintenance process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="faq-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-lg text-slate-800">Will ULV fogging help with an ant infestation in my car?</span>
+                        <i class="fas fa-chevron-down text-slate-400 faq-chevron"></i>
+                    </button>
+                    <div class="faq-content bg-slate-50/50">
+                        <p class="text-slate-600 text-sm p-6 pt-0 leading-relaxed">
+                            For an ant infestation, we do not rely on ULV fogging alone. Instead, we apply a robust spray coating to both the exterior and interior of the car, followed by a fumigation treatment to fully eliminate the ant colony.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -440,16 +541,35 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for a Pest-Free Drive?</h2>
                 <p class="text-gray-400 mb-8">Book your professional onsite session now.</p>
                 <a href="https://api.whatsapp.com/send?phone=6586666499&text=Hi%20Proshield%2C%20can%20I%20enquire%20on%20your%20services%3F" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-xl transition transform hover:scale-105">
-                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> Chat with us Today
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> Chat with us Today (8666 6499)
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <div class="bg-blue-950 py-6 text-center text-blue-300/30 text-[10px] font-bold tracking-widest uppercase">
-        &copy; 2024 Pro-Shield Pest & Mold Management.
-    </div>
+    <!-- Navigation / Future Landing Pages Backlinks (SEO Optimized Footer) -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 text-sm">
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase tracking-wider">Our Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Car Fumigation Services</a></li>
+                        <li><a href="#" class="hover:text-white transition opacity-60">Mold Remediation & Cleaning</a></li>
+                        <li><a href="#" class="hover:text-white transition opacity-60">Yacht & Vessel Sanitization</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase tracking-wider">Location & Hours</h4>
+                    <p class="text-slate-400 leading-relaxed mb-2">Onsite Services Across All Neighborhoods in Singapore.</p>
+                    <p class="text-slate-400 leading-relaxed font-semibold text-blue-400">Mon - Sun: 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 text-center text-xs">
+                &copy; 2026 Pro-Shield Pest & Mold Management Singapore. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <script>
         const videos = ['1192759749', '1192759726']; // Swapped order so 749 shows first
@@ -468,6 +588,20 @@
         function prevVideo() {
             currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
             updateVideo();
+        }
+
+        // Accordion functionality for Collapsible FAQ Section
+        function toggleFAQ(button) {
+            // Toggle active styling
+            button.classList.toggle('active');
+            
+            // Toggle element height
+            const content = button.nextElementSibling;
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
         }
 
         const observer = new IntersectionObserver((entries) => {
